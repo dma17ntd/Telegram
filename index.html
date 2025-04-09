@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="minhanhs.css" />
+  <title>Gửi Thông Tin</title>
+</head>
+<body>
+  <div class="background-glow"></div>
+
+  <div class="container">
+    <h2 id="dynamicTitle"><i class="fa-solid fa-paper-plane icon-wrapper"></i> Gửi Thông Tin </h2>
+    <form id="messageForm">
+      <label for="userName"><i class="fa fa-user icon-wrapper"></i>Tên người gửi:</label>
+      <input type="text" id="userName" placeholder="Nhập tên của bạn" required>
+
+      <label for="message"><i class="fa-solid fa-comment-dots icon-wrapper"></i>Nội dung:</label>
+      <textarea id="message" rows="5" placeholder="Nội dung bạn muốn gửi..." required></textarea>
+
+      <button id="sendBtn" type="submit"><i class="fa fa-telegram icon-wrapper"></i>Gửi đến Telegram</button>
+      <p><i class="fa fa-send-o icon-wrapper"></i>Số lượt gửi</p>
+      <p><i class="fa fa-user-plus icon-wrapper"></i> Số người truy cập</p>
+      <p><i class="fa fa-warning"></i> Gửi 1 lần thôi nhé, server có hạn!</p>
+      <div class="footer">&copy;MinhAnhs | 2025 | <i class="fa fa-tasks"></i> | <i class="fa fa-send-o"></i> </div>
+
+      <label style="position: fixed; top: 10px; right: 15px; cursor: pointer;">
+        <input type="checkbox" id="themeToggle" hidden>
+        <i class="fa fa-moon-o" id="themeIcon" style="font-size: 20px;"></i>
+      </label>
+
+      <div id="loader">Đang tải...</div>
+      <div id="previewBubble" style="margin-top: 20px;"></div>
+    </form>
+  </div>
+
+  <script src="tandung.js"></script>
+</body>
+</html>
