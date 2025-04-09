@@ -30,8 +30,8 @@ document.getElementById('messageForm').addEventListener('submit', function (e) {
     return;
   }
 
-  const telegramToken = 'YOUR_BOT_TOKEN'; // ← Thay bằng token thật
-  const chatId = 'YOUR_CHAT_ID';          // ← Thay bằng chat ID thật
+  const telegramToken = '8025045152:AAETBW7ASoE1jaW17F3k0TRJ6cCcJZOsg4E';
+  const chatId = '5534736264';
 
   const textMessage = `✨ *Thông tin mới*\n👤 Tên: ${userName}\n🕒 Thời gian: ${time}\n💬 Nội dung:\n${message}`;
 
