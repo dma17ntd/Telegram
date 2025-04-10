@@ -1,9 +1,3 @@
-// Hiển thị tin nhắn xem trước
-document.getElementById('message').addEventListener('input', () => {
-  const content = document.getElementById("message").value;
-  document.getElementById("previewBubble").innerHTML = `<div style="background:#6e45e2;padding:10px 15px;border-radius:15px;margin:10px 0;max-width:80%;color:white">💬 ${content}</div>`;
-});
-
 // Loader ẩn sau khi tải
 window.addEventListener("load", () => {
   document.getElementById("loader").style.display = "none";
@@ -61,13 +55,6 @@ document.getElementById('messageForm').addEventListener('submit', function (e) {
     alert("Đã xảy ra lỗi khi gửi!");
   });
 });
-
-// Giao diện theo thời gian
-const hour = new Date().getHours();
-if (hour >= 6 && hour < 18) {
-  document.body.style.background = "radial-gradient(ellipse at bottom, #cfd9df 0%, #e2ebf0 100%)";
-  document.body.style.color = "#333";
-}
 
 // Hiệu ứng typing cho tiêu đề
 const titleText = "Gửi Thông Tin ";
